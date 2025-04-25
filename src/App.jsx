@@ -4,7 +4,6 @@ import imgSlide from './assets/imgSlide11.png';
 import imgSlide2 from './assets/imgSlide2.png';
 import ketchup from './assets/sauce bootle 2.png';
 import PopularFood from './assets/img/1.png'
-import vector from './assets/vector.png';
 import p2 from './assets/2.png';
 import p3 from './assets/3.png';
 import f2 from './assets/11Vector.png';
@@ -75,7 +74,7 @@ function App() {
             <Vector/>
             
             <div className="plate-shape">
-              <img src={vector} alt="Кимчи" className="kimchi"/>
+              <img src={imgSlide} alt="Кимчи" className="kimchi"/>
               <button className="play-btn"><Play/></button>
             </div>
           </div>
