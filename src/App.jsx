@@ -14,7 +14,7 @@ import FaceBookIcon from './assets/Icons/faceBookIcon';
 import Play from './assets/Icons/play';
 import Vector from './assets/Icons/Vector';
 import Delivery from './assets/Icons/Delivery';
-import VectorTwo from './assets/Icons/VectorTwo';
+import BlobBorder from './assets/Icons/blob-border.svg'
 import Mouth from './assets/Icons/Mouth';
 import Header from './header';
 import './App.css';
@@ -168,9 +168,11 @@ function App() {
       </section>
       <section className="cta-section flex pad-container">
        
-        <div className="image-container">
-        <VectorTwo/><img src={f2} alt="Delicious food" />
-          
+        <div style={{ position: "relative", width: "360px", height: "320px" }}>
+          <div className="glow-background"></div>
+          <div className="image-container">
+            <img src={BlobBorder} className="svg-border" alt="" />
+          </div>
         </div>
         <div className="content">
           <h5>Take away</h5>

@@ -471,30 +471,46 @@ header {
   gap: 60px;
 }
 
-.image-container {
+
+
+.image-container  {
+  width: 360px;
+  height: 320px;
+  background-image: url('./assets/11Vector.png');
+  background-size: cover;
+  background-position: center;
+
+  mask-image: url('./assets/Icons/blob-mask.svg');
+
+  -webkit-mask-image: url('./assets/Icons/blob-mask.svg');
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+
   position: relative;
-  width: 310px;
-  height: 310px;
-
-  border-radius: 60% 40% 50% 70% / 60% 30% 70% 40%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  z-index: 1;
 }
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 100% 40% 46% 98% / 92% 43% 102% 17%;
-  z-index: 2;
-  padding: 20px;
+.svg-border {
   position: absolute;
-  top: 18px;
-  right: 9px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
 }
 
+.glow-background {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  filter: blur(25px);
+  background: radial-gradient(circle at bottom left, rgba(255, 153, 0, 0.3), transparent 70%);
+  z-index: 0;
+}
 .content {
   max-width: 500px;
 }
